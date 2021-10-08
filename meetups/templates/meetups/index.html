@@ -17,7 +17,7 @@
 
         {% block body %}
         <section>
-            <h2>Upcomming Meetups</h2>
+            <h2>Upcoming Meetups</h2>
             <ol>
                 {% for meet in meetups%}
                     {% include 'meetups/includes/meetup-item.html' with title=meet.title location=meet.location.name  slug=meet.slug  image=meet.image.url %}
